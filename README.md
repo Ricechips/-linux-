@@ -16,3 +16,6 @@ NETMASK=
 DNS1=
 service network restart
 ```
+## qcow2硬盘扩容
+qemu-img info xx.qcow2 <br>
+qemu-img resize xx.qcow2 +3G 
