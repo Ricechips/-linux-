@@ -22,3 +22,6 @@ qemu-img resize xx.qcow2 +3G
 
 ## SCP上传文件到服务器 
 scp -r /home/ root@192.168.xx.xx:/
+
+## 查找文件
+find / -name php.ini
