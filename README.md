@@ -35,3 +35,7 @@ rpm -ivh http://mirrors.wlnmp.com/centos/wlnmp-release-centos.noarch.rpm
 ntpdate ntp1.aliyun.com
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
+
+## 文件权限 大小
+df -hv
+r:4 w:2 x:1 
