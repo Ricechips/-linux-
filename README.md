@@ -28,3 +28,10 @@ find / -name php.ini
 
 ## 大小写问题
 setleds +caps
+
+## 时间同步
+```c
+rpm -ivh http://mirrors.wlnmp.com/centos/wlnmp-release-centos.noarch.rpm
+ntpdate ntp1.aliyun.com
+ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
