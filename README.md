@@ -36,6 +36,7 @@ ntpdate ntp1.aliyun.com
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
-## 文件权限 大小
+## 文件权限 大小 所有者 组
 df -hv
 r:4 w:2 x:1 
+chown 3000000:users /home
