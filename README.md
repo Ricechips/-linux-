@@ -37,8 +37,7 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## 文件权限 大小 所有者 组
-df -hv
-r:4 w:2 x:1 
+r:4 w:2 x:1 <br>
 chown 3000000:users /home
 
 ## 磁盘扩容(不是扩/根目录,扩根的教程太多了)
