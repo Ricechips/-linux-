@@ -40,3 +40,19 @@ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 df -hv
 r:4 w:2 x:1 
 chown 3000000:users /home
+
+## 磁盘扩容(不是扩/根目录,扩根的教程太多了)
+在原有的一个数据盘上进行扩容并保证数据不丢失<br>
+不用pv,vg云云<br>
+```c
+umount /dev/sdb1
+parted
+p
+unit s
+p
+rm 1
+mkpart primary ext4 2048 x.xG
+e2fsck -f /dev/sdb1
+resize2fs /dev/sdb1
+重新Mount
+```
