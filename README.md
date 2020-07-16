@@ -55,3 +55,7 @@ e2fsck -f /dev/sdb1
 resize2fs /dev/sdb1
 重新Mount
 ```
+
+## Spice
+spice-gtk-tools软件包<br>
+spicy -h 127.0.0.1 -p 5900
