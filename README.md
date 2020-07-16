@@ -59,3 +59,6 @@ resize2fs /dev/sdb1
 ## Spice
 spice-gtk-tools软件包<br>
 spicy -h 127.0.0.1 -p 5900
+
+## 透传USB
+virsh attach-device $domain_name usb.xml
