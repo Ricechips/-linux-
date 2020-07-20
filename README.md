@@ -62,3 +62,21 @@ spicy -h 127.0.0.1 -p 5900
 
 ## 透传USB
 virsh attach-device $domain_name usb.xml
+```c
+脚本
+#!bin/sh
+lsusb > junk2.txt
+diff junk.txt junk2.txt > junk3.txt
+sed -n '4p' junk3.txt | awk '{print $5}' > junk4.txt
+I = $(cat junk4.txt) 
+expr substr "$I" 2 2 > junk5.txt
+I1 = $(cat junk5.txt)
+echo "<hostdev mode='subsystem' type='usb' managed='yes'>
+      <source>
+        <vendor id='0x15d9'/>
+        <product id='0x0a4e'/>
+        <address bus='2' device='$I1'/>
+      </source>
+      </hostdev>"> device.xml
+virsh attach-device win10-2 device.xml    
+```
