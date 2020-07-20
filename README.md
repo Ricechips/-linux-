@@ -84,3 +84,4 @@ virsh attach-device win10-2 device.xml
 ##
 /usr 全名為 unix software resource 縮寫，放置系統相關軟體、服務（注意不是 user 的縮寫喔！)<br>
 {n}dd {n}：刪除游標所在的那一行往下數 {n} 行
+watch -n 1 pkill -USR1 -x dd 拷贝u盘进度条
