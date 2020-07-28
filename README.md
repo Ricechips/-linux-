@@ -85,7 +85,7 @@ virsh attach-device win10-2 device.xml
 /usr 全名為 unix software resource 縮寫，放置系統相關軟體、服務（注意不是 user 的縮寫喔！)<br>
 {n}dd {n}：刪除游標所在的那一行往下數 {n} 行<br>
 watch -n 1 pkill -USR1 -x dd 拷贝u盘进度条<br>
-su (switch user)
-
+su (switch user)<br>
+grep -i xhci /boot/config-$(uname -r)
 ## win10改时间显示--某些设置隐藏
 去control panel改
