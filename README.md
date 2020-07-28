@@ -86,3 +86,6 @@ virsh attach-device win10-2 device.xml
 {n}dd {n}：刪除游標所在的那一行往下數 {n} 行<br>
 watch -n 1 pkill -USR1 -x dd 拷贝u盘进度条<br>
 su (switch user)
+
+## win10改时间显示--某些设置隐藏
+去control panel改
