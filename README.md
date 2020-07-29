@@ -92,9 +92,11 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-si
 去control panel改
 
 ## github
+```c
 #github
 192.30.253.113 github.com
 151.101.185.194 github.global.ssl.fastly.net
 https://www.ipaddress.com/ip-lookup
 C:\Windows\System32\drivers\etc\hosts
 /etc/hosts
+```
