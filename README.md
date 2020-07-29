@@ -87,7 +87,7 @@ virsh attach-device win10-2 device.xml
 watch -n 1 pkill -USR1 -x dd 拷贝u盘进度条<br>
 su (switch user)<br>
 grep -i xhci /boot/config-$(uname -r)<br>
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/configuring_and_managing_virtualization/index#differences-between-virtualization-features-in-virtual-machine-manager-and-the-rhel-8-web-console_using-the-rhel-8-web-console-for-managing-vms
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_virtualization/index
 ## win10改时间显示--某些设置隐藏
 去control panel改
 
