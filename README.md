@@ -88,7 +88,8 @@ watch -n 1 pkill -USR1 -x dd 拷贝u盘进度条<br>
 su (switch user)<br>
 grep -i xhci /boot/config-$(uname -r)<br>
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/configuring_and_managing_virtualization/index<br>
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/index<br>
+https://lwn.net/Articles/705160/
 ## win10改时间显示--某些设置隐藏
 去control panel改
 
