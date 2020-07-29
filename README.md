@@ -89,3 +89,11 @@ su (switch user)<br>
 grep -i xhci /boot/config-$(uname -r)
 ## win10改时间显示--某些设置隐藏
 去control panel改
+
+## github
+#github
+192.30.253.113 github.com
+151.101.185.194 github.global.ssl.fastly.net
+https://www.ipaddress.com/ip-lookup
+C:\Windows\System32\drivers\etc\hosts
+/etc/hosts
