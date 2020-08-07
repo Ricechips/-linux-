@@ -140,6 +140,16 @@ do
     fi
 done
 ```
+```c
+#!/bin/bash
+echo "The Host Name is:"`hostname`
+echo "The IP ADDR is:"`ifconfig | head -2 | tail -1 | awk '{print $2}'`
+echo "The OS Version is:"`cat /etc/redhat-release`
+echo "The Kernel Version is:"`cat /proc/version | cut -d"(" -f1`
+echo "The CPU Model is:"`lscpu | grep "Model name" | cut -d ":" -f2 | tr -s " "`
+echo "The Memory Size is:"`free -h | tail -1 | awk '{print $1,$2}'`
+echo "The HD Size is:"`lsblk | grep "disk" | awk '{print $NF,$4}'`
+```
 
 ## 时间date
 date +"%F %T"<br>
