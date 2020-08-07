@@ -146,7 +146,7 @@ echo "The Host Name is:"`hostname`
 echo "The IP ADDR is:"`ifconfig | head -2 | tail -1 | awk '{print $2}'`
 echo "The OS Version is:"`cat /etc/redhat-release`
 echo "The Kernel Version is:"`cat /proc/version | cut -d"(" -f1`
-echo "The CPU Model is:"`lscpu | grep "Model name" | cut -d ":" -f2 | tr -s " "` //以:为分割符号，第二个field -s 删除所有重复出现字符序列，只保留第一个；即将重复出现字符串压缩为一个字符串
+echo "The CPU Model is:"`lscpu | grep "Model name" | cut -d ":" -f2 | tr -s " "` //以:为分割符号，第二个field; -s 删除所有重复出现字符序列，只保留第一个；即将重复出现字符串压缩为一个字符串
 echo "The Memory Size is:"`free -h | tail -1 | awk '{print $1,$2}'`
 echo "The HD Size is:"`lsblk | grep "disk" | awk '{print $NF,$4}'` //$NF代表 ：最后一个Field(列)
 ```
