@@ -119,3 +119,24 @@ else
 fi
 #./status.sh httpd
 ```
+```c
+sh -xv xxx.sh //调试脚本
+#!/bin/bash
+i=0            
+num2=`echo $RANDOM | cut -c 1-2`        
+while true     
+do
+    read -p "num:" num1   
+    if [ ${num1} -gt ${num2} ];then     
+        echo "da"   
+        let i++                 
+    elif [ ${num1} -lt ${num2} ];then  
+        echo "xiao"    
+        let i++                
+    else
+        echo "bingo"   
+        echo "wrong times:$i"     
+        break                  
+    fi
+done
+```
