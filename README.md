@@ -102,3 +102,20 @@ https://www.ipaddress.com/ip-lookup
 C:\Windows\System32\drivers\etc\hosts
 /etc/hosts
 ```
+
+## systemctl service.sh
+```c
+#!/bin/bash
+if [ $# -ge 1 ];then //如果传递的参数数量大于或等于1
+        systemctl status $1 > /dev/null
+        if [ $? -eq 0 ];then //$?是指上一次命令执行的成功或者失败的状态
+                echo "service is running"
+        else
+                systemctl start $1
+        fi
+else
+        echo "执行脚本的格式"
+        echo "sh $0 服务名"
+fi
+#./status.sh httpd
+```
