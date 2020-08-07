@@ -140,7 +140,7 @@ do
     fi
 done
 ```
-```c
+```shell
 #!/bin/bash
 echo "The Host Name is:"`hostname`
 echo "The IP ADDR is:"`ifconfig | head -2 | tail -1 | awk '{print $2}'`
