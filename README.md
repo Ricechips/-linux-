@@ -103,7 +103,7 @@ C:\Windows\System32\drivers\etc\hosts
 /etc/hosts
 ```
 
-## systemctl service.sh
+## systemctl service status
 ```c
 #!/bin/bash
 if [ $# -ge 1 ];then //如果传递的参数数量大于或等于1
