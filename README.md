@@ -140,3 +140,8 @@ do
     fi
 done
 ```
+
+## 时间date
+date +"%F %T"<br>
+%F  full date; same as %Y-%m-%d<br>
+%T  time; same as %H:%M:%S<br>
